@@ -16,7 +16,9 @@
     divisibleByThree('7') // false
 */
 
-const divisibleByThree = string => {}
+const divisibleByThree = string => {
+  return string % 3 === 0
+}
 
 // Function Export
 module.exports = divisibleByThree
