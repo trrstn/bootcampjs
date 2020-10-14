@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
   Title:
     Calculate BMI
@@ -14,8 +15,19 @@
     if bmi > 30 return "Obese"
 */
 
+/*eslint no-zero-fractions: "error"*/
+
 // Long Solution
-function bmi(weight, height) {
+const bmi = (weight, height) => {
+  return evaluateBmi(calculateBmi(weight, height))
+}
+
+const calculateBmi = (weight, height) => {
+  return weight / height / height
+}
+
+const evaluateBmi = (bmi) => {
+  return bmi <= 25.0 ? (bmi <= 18.5 ? 'Underweight' : 'Normal') : bmi <= 30.0 ? 'Overweight' : 'Obese'
 }
 
 // Function Export

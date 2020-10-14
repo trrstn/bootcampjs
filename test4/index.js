@@ -13,7 +13,7 @@
     The expected result is a boolean, indicating whether you have any good arrows left.
 */
 
-const anyArrows = arrows => {}
+const anyArrows = (arrows) => arrows.some((arrow) => !arrow.damaged)
 
 // Function Export
 module.exports = anyArrows

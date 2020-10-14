@@ -61,13 +61,16 @@ const MORSE_CODE = {
   '----.': '9',
 }
 
-const decodeMorse = morseCode =>
-  morseCode
+const decodeMorse = (morseCode) => {
+  const newMorseCode = morseCode
     .trim()
     .split(' ')
-    .map(a => MORSE_CODE[a] || ' ')
+    .map((a) => MORSE_CODE[a] || ' ')
     .join('')
     .replace(/\s+/g, ' ')
+
+  return newMorseCode
+}
 
 // Function Export
 module.exports = decodeMorse
