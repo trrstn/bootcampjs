@@ -28,7 +28,7 @@
 */
 
 const itinerary = (travel) => {
-  let itinerary = []
+  const itinerary = []
   for (let i = 0; i < travel.length; i++) {
     itinerary.push(travel[i].in)
     itinerary.push(travel[i].out)

@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
   Title:
     Calculate BMI
@@ -13,6 +14,8 @@
 
     if bmi > 30 return "Obese"
 */
+
+/*eslint no-zero-fractions: "error"*/
 
 // Long Solution
 const bmi = (weight, height) => {
